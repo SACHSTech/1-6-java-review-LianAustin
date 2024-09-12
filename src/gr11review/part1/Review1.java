@@ -19,11 +19,13 @@ public class Review1{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
+        // Ask the user for the month number and day number
         System.out.print("Enter the month number: ");
         int intMonth = Integer.parseInt(br.readLine());
         System.out.print("Enter the day number: ");
         int intDay = Integer.parseInt(br.readLine());
 
+        // Calculate the day of the year
         int intDayOfYear = 0;
         int[] intDaysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30};
 
@@ -31,6 +33,8 @@ public class Review1{
             intDayOfYear += intDaysInMonth[i];
         }
         intDayOfYear += intDay;
+
+        // Output the day of the year
         System.out.println(intDayOfYear);
     }
 }
