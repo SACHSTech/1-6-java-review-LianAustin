@@ -5,7 +5,7 @@ import java.math.*;
 import java.text.*;
 
 /**
- * A program that asks the user for the bdlPrice of items and outputs the bdlSubTotal, bdlTax, and bdlTotal
+ * A program that asks the user for the price of items and outputs the Subtotal, Tax, and Total
  * of the items
  *
  * @author: Austin L
