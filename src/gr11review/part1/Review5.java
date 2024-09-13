@@ -15,14 +15,17 @@ public class Review5{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         double dblCurrentAmount = 0;
         int intYears = 0;
+        double dblYearlyAmount;
+        double dblInterestRate;
+        double dblTargetAmount;
 
         // Ask the user for the yearly amount, compound interest rate, and target amount
         System.out.print("Enter the yearly invested amount: ");
-        double dblYearlyAmount = Double.parseDouble(br.readLine());
+        dblYearlyAmount = Double.parseDouble(br.readLine());
         System.out.print("Enter the compound interest rate: ");
-        double dblInterestRate = Double.parseDouble(br.readLine());
+        dblInterestRate = Double.parseDouble(br.readLine());
         System.out.print("Enter the target amount: ");
-        double dblTargetAmount = Double.parseDouble(br.readLine());
+        dblTargetAmount = Double.parseDouble(br.readLine());
 
         // Calculate the number of years it will take to reach the target amount
         while (dblCurrentAmount < dblTargetAmount) {
