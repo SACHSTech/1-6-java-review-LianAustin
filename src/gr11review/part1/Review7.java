@@ -12,16 +12,16 @@ public class Review7 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         // Input the sentence
-        String strSentence = br.readLine();
+        String strTheSentence = br.readLine();
 
         // Gets number of characters
-        int intChars = strSentence.length();
+        int intChars = strTheSentence.length();
 
         // Gets number of spaces and number of letter 'a's
         int intSpaces = 0;
         int intLetterA = 0;
-        for (int i = 0; i < strSentence.length(); i++) {
-            char charCharacters = strSentence.charAt(i);
+        for (int i = 0; i < strTheSentence.length(); i++) {
+            char charCharacters = strTheSentence.charAt(i);
             if (charCharacters == ' ')
                 intSpaces++;
             if (charCharacters == 'a' || charCharacters == 'A')
@@ -30,7 +30,7 @@ public class Review7 {
 
         // Get the odd-numbered characters
         String strOddChars = "";
-        for (int i = 0; i < strSentence.length(); i++) {
+        for (int i = 0; i < strTheSentence.length(); i++) {
             if (i % 2 == 0) {
                 strOddChars += '-';
             }
