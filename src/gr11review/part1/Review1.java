@@ -1,13 +1,6 @@
 package gr11review.part1;
 
 import java.io.*;
-import java.util.*;
-import java.lang.*;
-import java.awt.*;
-import java.awt.geom.*;
-import java.math.*;
-import java.text.*;
-
 
 /**
  * A program that asks the user for the month number and day number and outputs the day of the year
