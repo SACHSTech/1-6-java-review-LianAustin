@@ -16,14 +16,18 @@ import java.text.*;
  */
 public class Review1{
     public static void main(String[] args) throws IOException{
+
+        // Initialize variables
+        int intMonth;
+        int intDay;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
         // Ask the user for the month number and day number
         System.out.print("Enter the month number: ");
-        int intMonth = Integer.parseInt(br.readLine());
+        intMonth = Integer.parseInt(br.readLine());
         System.out.print("Enter the day number: ");
-        int intDay = Integer.parseInt(br.readLine());
+        intDay = Integer.parseInt(br.readLine());
 
         // Calculate the day of the year
         int intDayOfYear = 0;
