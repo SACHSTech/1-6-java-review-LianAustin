@@ -25,7 +25,7 @@ public class Review4 {
 
         // Calculate the SubTotal, Tax, and Total of the items
         for (int i = 1; i <= intItems; i++) {
-            System.out.print("Enter the bdlPrice for item " + i + ": ");
+            System.out.print("Enter the price for item " + i + ": ");
             BigDecimal bdlPrice = new BigDecimal(br.readLine());
             bdlSubTotal = bdlSubTotal.add(bdlPrice);
         }
@@ -34,7 +34,7 @@ public class Review4 {
         BigDecimal bdlTotal = bdlSubTotal.add(bdlTax);
 
          // Output the SubTotal, Tax, and Total of the items
-        System.out.println("SubbdlTotal: $" + df.format(bdlSubTotal));
+        System.out.println("SubTotal: $" + df.format(bdlSubTotal));
         System.out.println("Tax: $" + df.format(bdlTax));
         System.out.println("Total: $" + df.format(bdlTotal));
     }
