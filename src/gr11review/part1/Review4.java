@@ -34,7 +34,7 @@ public class Review4 {
         BigDecimal bdlTotal = bdlSubTotal.add(bdlTax);
 
          // Output the SubTotal, Tax, and Total of the items
-        System.out.println("SubTotal: $" + df.format(bdlSubTotal));
+        System.out.println("Subtotal: $" + df.format(bdlSubTotal));
         System.out.println("Tax: $" + df.format(bdlTax));
         System.out.println("Total: $" + df.format(bdlTotal));
     }
