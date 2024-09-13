@@ -4,7 +4,7 @@ import java.io.*;
 import java.math.*;
 import java.text.*;
 /**
- * A program that asks the user for the price of items and outputs the subtotal, tax, and total
+ * A program that asks the user for the price of items and outputs the Subtotal, Tax, and Total
  * of the items
  *
  * @author: Austin L
@@ -15,26 +15,26 @@ public class Review6{
         // Initialize variables
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         DecimalFormat df = new DecimalFormat("0.00");
-        BigDecimal subtotal = BigDecimal.ZERO;
-        BigDecimal price = BigDecimal.ZERO;
+        BigDecimal bdlSubtotal = BigDecimal.ZERO;
+        BigDecimal bdlPrice = BigDecimal.ZERO;
 
-        // Ask the user for the price of items
+        // Ask the user for the Price of items
         while (true) {
-            System.out.print("Enter the price for an item: ");
-            price = new BigDecimal(br.readLine());
-            if (price.compareTo(BigDecimal.ZERO) == 0) {
+            System.out.print("Enter the bdlPrice for an item: ");
+            bdlPrice = new BigDecimal(br.readLine());
+            if (bdlPrice.compareTo(BigDecimal.ZERO) == 0) {
                 break;
             }
-            subtotal = subtotal.add(price);
+            bdlSubtotal = bdlSubtotal.add(bdlPrice);
         }
 
-        // Calculate the tax and total of the items
-        BigDecimal tax = subtotal.multiply(new BigDecimal("0.13")).setScale(2, RoundingMode.HALF_UP);
-        BigDecimal total = subtotal.add(tax);
+        // Calculate the Tax and Subtotal of the items
+        BigDecimal bdlTax = bdlSubtotal.multiply(new BigDecimal("0.13")).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal bdlTotal = bdlSubtotal.add(bdlTax);
 
-        // Output the subtotal, tax, and total of the items
-        System.out.println("Subtotal: $" + df.format(subtotal));
-        System.out.println("Tax: $" + df.format(tax));
-        System.out.println("Total: $" + df.format(total));
+        // Output the Subtotal, Tax, and Total of the items
+        System.out.println("SubbdlTotal: $" + df.format(bdlSubtotal));
+        System.out.println("Tax: $" + df.format(bdlTax));
+        System.out.println("Total: $" + df.format(bdlTotal));
     }
 }
