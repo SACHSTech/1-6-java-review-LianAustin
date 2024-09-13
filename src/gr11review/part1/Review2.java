@@ -1,12 +1,6 @@
 package gr11review.part1;
 
 import java.io.*;
-import java.util.*;
-import java.lang.*;
-import java.awt.*;
-import java.awt.geom.*;
-import java.math.*;
-import java.text.*;
 
 /*
  * A program that outputs a joke based on the user's menu option
@@ -15,8 +9,9 @@ import java.text.*;
  */
 public class Review2 {
     public static void main(String[] args) throws IOException {
+
+        int intOption;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
         // Print out the options
         System.out.println("0 - print a joke about your hair");
@@ -26,7 +21,6 @@ public class Review2 {
 
         // Ask the user for an option
         System.out.print("Choose a menu option: ");
-        int intOption = 0;
         intOption = Integer.parseInt(br.readLine());
 
             // Output the joke based on the option
@@ -41,7 +35,7 @@ public class Review2 {
                     System.out.println("The feud between the two clothing stores down the street finally came to an end. \n It ended in a tie.");
                     break;
                 case 3:
-                    System.out.println("Two chemists walk into a bar.\r\n" + //
+                    System.out.println("Two chemistry teachers walk into a bar.\r\n" + //
                                                 "\r\n" + //
                                                 "The first one says, \"I'll have some H2O.\"\r\n" + //
                                                 "\r\n" + //
