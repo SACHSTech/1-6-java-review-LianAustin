@@ -20,7 +20,7 @@ public class Review6{
 
         // Ask the user for the Price of items
         while (true) {
-            System.out.print("Enter the bdlPrice for an item: ");
+            System.out.print("Enter the price for an item: ");
             bdlPrice = new BigDecimal(br.readLine());
             if (bdlPrice.compareTo(BigDecimal.ZERO) == 0) {
                 break;
@@ -33,7 +33,7 @@ public class Review6{
         BigDecimal bdlTotal = bdlSubtotal.add(bdlTax);
 
         // Output the Subtotal, Tax, and Total of the items
-        System.out.println("SubbdlTotal: $" + df.format(bdlSubtotal));
+        System.out.println("Subtotal: $" + df.format(bdlSubtotal));
         System.out.println("Tax: $" + df.format(bdlTax));
         System.out.println("Total: $" + df.format(bdlTotal));
     }
