@@ -3,6 +3,7 @@ package gr11review.part1;
 import java.io.*;
 import java.math.*;
 import java.text.*;
+
 /**
  * A program that asks the user for the price of items and outputs the Subtotal, Tax, and Total
  * of the items
@@ -10,6 +11,13 @@ import java.text.*;
  * @author: Austin L
  */
 public class Review6{
+
+    /**
+     * Main method to execute the program logic.
+     *
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main(String[] args) throws IOException{
 
         // Initialize variables
