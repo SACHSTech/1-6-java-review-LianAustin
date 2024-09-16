@@ -11,6 +11,13 @@ import java.text.*;
  * @author: Austin L
  */
 public class Review4 {
+
+    /**
+     * Main method to execute the program logic.
+     *
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main(String[] args) throws Exception {
 
         // Initialize variables
