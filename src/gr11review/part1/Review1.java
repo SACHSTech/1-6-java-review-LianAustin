@@ -8,13 +8,19 @@ import java.io.*;
  * @author: Austin L
  */
 public class Review1{
+
+    /**
+     * Main method to execute the program logic.
+     *
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main(String[] args) throws IOException{
 
         // Initialize variables
         int intMonth;
         int intDay;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
         // Ask the user for the month number and day number
         System.out.print("Enter the month number: ");
