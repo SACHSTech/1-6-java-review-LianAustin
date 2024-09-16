@@ -8,6 +8,13 @@ import java.io.*;
  * @author: Austin L
  */
 public class Review2 {
+
+    /**
+     * Main method to execute the program logic.
+     *
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main(String[] args) throws IOException {
 
         int intOption;
