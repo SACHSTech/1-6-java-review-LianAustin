@@ -1,7 +1,22 @@
 package gr11review.part1;
 
+import java.io.IOException;
 import java.util.*;
+
+/**
+ * A program that generates three random numbers between 0 and 8 1000 times and outputs the number of triples
+ * that were generated
+ *
+ * @author: Austin L
+ */
 public class Review8 {
+
+    /**
+     * Main method to execute the program logic.
+     *
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main(String[] args) {
 
         // Initialize variables
